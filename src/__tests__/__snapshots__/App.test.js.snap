@@ -19,7 +19,7 @@ exports[`<App /> matches the snap shot 1`] = `
 </Fragment>
 `;
 
-exports[`<App /> mount matches the snap shot 1`] = `
+exports[`<App /> mount matches th e snap shot 1`] = `
 <App>
   <h3
     className="title"

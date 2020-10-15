@@ -38,9 +38,9 @@ describe('<App />', () => {
 });
 
 describe('<App /> mount', () => {
-	const wrapper = mount(<App />);
+	const wrapper = mount(<App />, );
 
-	it('matches the snap shot', () => {
+	it('matches th e snap shot', () => {
 		expect(toJson(wrapper)).toMatchSnapshot();
 	});
 });
