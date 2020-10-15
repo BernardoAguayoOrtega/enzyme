@@ -3,12 +3,12 @@ import React from 'react';
 //import app component
 import { App } from '../components/App';
 //import shallow
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 //import toJson
-import toJson from 'enzyme-to-json'
+import toJson from 'enzyme-to-json';
 
 describe('<App />', () => {
-	const wrapper = shallow(<App name='Bernardo'/>);
+	const wrapper = shallow(<App name='Bernardo' />);
 
 	it('should contain 1 h3 element', () => {
 		expect(wrapper.find('h3').exists()).toBe(true);
@@ -30,10 +30,17 @@ describe('<App />', () => {
 		expect(wrapper.find('SubTitle[text="hey"]').exists()).toBe(true);
 	});
 
-  it
+	it;
 
 	it('matches the snap shot', () => {
 		expect(toJson(wrapper)).toMatchSnapshot();
 	});
+});
 
+describe('<App /> mount', () => {
+	const wrapper = mount(<App />);
+
+	it('matches the snap shot', () => {
+		expect(toJson(wrapper)).toMatchSnapshot();
+	});
 });
