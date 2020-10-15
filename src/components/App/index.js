@@ -1,7 +1,7 @@
 //import react
 import React from 'react';
 
-const SubTitle = ({text}) => <h4>{text}</h4>;
+const SubTitle = ({ text }) => <h4>{text}</h4>;
 
 //export and create app component
 export const App = () => {

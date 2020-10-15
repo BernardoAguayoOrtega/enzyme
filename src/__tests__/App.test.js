@@ -4,6 +4,8 @@ import React from 'react';
 import { App } from '../components/App';
 //import shallow
 import { shallow } from 'enzyme';
+//import toJson
+import toJson from 'enzyme-to-json'
 
 describe('<App />', () => {
 	const wrapper = shallow(<App />);
@@ -26,7 +28,12 @@ describe('<App />', () => {
 
 	it('should bee sub title component', () => {
 		expect(wrapper.find('SubTitle[text="hey"]').exists()).toBe(true);
-  });
+	});
 
-	console.log(wrapper.debug());
+	it('matches the snap shot', () => {
+		const tree = shallow(<App />);
+
+		expect(toJson(tree)).toMatchSnapshot();
+	});
+
 });
