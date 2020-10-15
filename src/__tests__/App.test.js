@@ -11,6 +11,10 @@ describe('<App />', () => {
 	it('should contain 1 h3 element', () => {
     expect(wrapper.find('h3').length).toBe(1)
   });
+
+  it('should contain title class', () => {
+    expect(wrapper.find('.title').exists()).toBe(true)
+  });
   
   console.log(wrapper.debug())
 });
