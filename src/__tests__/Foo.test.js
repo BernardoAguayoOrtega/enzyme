@@ -3,9 +3,7 @@ import React from 'react';
 //import app component
 import { Foo } from '../components/Foo';
 //import shallow
-import { shallow, mount } from 'enzyme';
-//import toJson
-import toJson from 'enzyme-to-json';
+import { shallow } from 'enzyme';
 
 describe('<Foo/> ', () => {
 	it('should pass', () => {

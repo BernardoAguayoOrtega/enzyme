@@ -10,32 +10,9 @@ exports[`<App /> matches the snap shot 1`] = `
   <h2>
     Hey there
   </h2>
-  <h3>
-    Bernardo
-  </h3>
+  <h3 />
   <SubTitle
     text="hey"
   />
 </Fragment>
-`;
-
-exports[`<App /> mount matches th e snap shot 1`] = `
-<App>
-  <h3
-    className="title"
-  >
-    I'm the app component
-  </h3>
-  <h2>
-    Hey there
-  </h2>
-  <h3 />
-  <SubTitle
-    text="hey"
-  >
-    <h4>
-      hey
-    </h4>
-  </SubTitle>
-</App>
 `;
