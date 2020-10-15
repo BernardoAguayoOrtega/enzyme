@@ -27,6 +27,7 @@
 		"@babel/core": "^7.12.0",
 		"@babel/preset-env": "^7.12.0",
 		"@babel/preset-react": "^7.10.4",
+		"babel-jest": "^26.5.2",
 		"babel-loader": "^8.1.0",
 		"babel-plugin-transform-class-properties": "^6.24.1",
 		"css-loader": "^5.0.0",
@@ -50,6 +51,9 @@
 		],
 		"moduleNameMapper": {
 			"\\.(css|less|scss|sss|styl)$": "<rootDir>/node_modules/jest-css-modules"
+		},
+		"transform": {
+			"^.+\\.[t|j]sx?$": "babel-jest"
 		}
 	}
 }
