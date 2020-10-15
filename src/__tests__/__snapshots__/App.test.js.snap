@@ -10,6 +10,9 @@ exports[`<App /> matches the snap shot 1`] = `
   <h2>
     Hey there
   </h2>
+  <h3>
+    Bernardo
+  </h3>
   <SubTitle
     text="hey"
   />

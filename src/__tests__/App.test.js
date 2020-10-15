@@ -8,10 +8,10 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json'
 
 describe('<App />', () => {
-	const wrapper = shallow(<App />);
+	const wrapper = shallow(<App name='Bernardo'/>);
 
 	it('should contain 1 h3 element', () => {
-		expect(wrapper.find('h3').length).toBe(1);
+		expect(wrapper.find('h3').exists()).toBe(true);
 	});
 
 	it('should contain title class', () => {
@@ -30,10 +30,10 @@ describe('<App />', () => {
 		expect(wrapper.find('SubTitle[text="hey"]').exists()).toBe(true);
 	});
 
-	it('matches the snap shot', () => {
-		const tree = shallow(<App />);
+  it
 
-		expect(toJson(tree)).toMatchSnapshot();
+	it('matches the snap shot', () => {
+		expect(toJson(wrapper)).toMatchSnapshot();
 	});
 
 });

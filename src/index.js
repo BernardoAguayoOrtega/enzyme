@@ -9,4 +9,4 @@ import { App } from './components/App';
 const root = document.getElementById('root');
 
 //render the app
-render(<App />, root);
+render(<App name='you'/>, root);
