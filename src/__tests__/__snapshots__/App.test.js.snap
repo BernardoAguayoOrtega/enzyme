@@ -14,5 +14,13 @@ exports[`<App /> matches the snap shot 1`] = `
   <SubTitle
     text="hey <3"
   />
+  <Switch>
+    <Route
+      exact={true}
+      path="/random"
+    >
+      <RandomPage />
+    </Route>
+  </Switch>
 </Fragment>
 `;

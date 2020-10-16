@@ -1,5 +1,9 @@
 //import react
 import React from 'react';
+//import switch, link and route components
+import { Switch, Link, Route } from 'react-router-dom';
+//import random page
+import { RandomPage } from '../RandomPage';
 
 const SubTitle = ({ text }) => <h4>{text}</h4>;
 
@@ -13,6 +17,12 @@ export const App = () => {
 			<h2>Hey there</h2>
 			<h3>{name}</h3>
 			<SubTitle text='hey <3' />
+
+			<Switch>
+				<Route path='/random' exact={true}>
+					<RandomPage />
+				</Route>
+			</Switch>
 		</>
 	);
 };

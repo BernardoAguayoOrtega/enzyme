@@ -30,10 +30,16 @@ describe('<App />', () => {
 		expect(wrapper.find('SubTitle[text="hey <3"]').exists()).toBe(true);
   });
   
-  it('check handle something',() => {
-    const trueReturn = wrapper.debug()
+  it('is there a switch?',() => {
+		const isThereSwitch =  wrapper.find('Switch').exists()
 
-    console.log(trueReturn)
+		expect(isThereSwitch).toBe(true)
+	})
+	
+	it('How many routes are?',() => {
+		const isThereSwitch =  wrapper.find('Route').length
+
+		expect(isThereSwitch).toBe(1)
   })
 
 	it('matches the snap shot', () => {
