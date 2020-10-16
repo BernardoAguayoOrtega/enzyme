@@ -28,7 +28,13 @@ describe('<App />', () => {
 
 	it('should bee sub title component', () => {
 		expect(wrapper.find('SubTitle[text="hey"]').exists()).toBe(true);
-	});
+  });
+  
+  it('check handle something',() => {
+    const trueReturn = wrapper.debug()
+
+    console.log(trueReturn)
+  })
 
 	it('matches the snap shot', () => {
 		expect(toJson(wrapper)).toMatchSnapshot();
