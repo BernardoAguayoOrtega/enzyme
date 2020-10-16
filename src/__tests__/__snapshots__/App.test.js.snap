@@ -12,7 +12,7 @@ exports[`<App /> matches the snap shot 1`] = `
   </h2>
   <h3 />
   <SubTitle
-    text="hey"
+    text="hey <3"
   />
 </Fragment>
 `;

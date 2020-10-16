@@ -27,7 +27,7 @@ describe('<App />', () => {
 	});
 
 	it('should bee sub title component', () => {
-		expect(wrapper.find('SubTitle[text="hey"]').exists()).toBe(true);
+		expect(wrapper.find('SubTitle[text="hey <3"]').exists()).toBe(true);
   });
   
   it('check handle something',() => {

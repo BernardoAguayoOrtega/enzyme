@@ -12,7 +12,7 @@ export const App = () => {
 			<h3 className='title'>I'm the app component</h3>
 			<h2>Hey there</h2>
 			<h3>{name}</h3>
-			<SubTitle text='hey' />
+			<SubTitle text='hey <3' />
 		</>
 	);
 };
