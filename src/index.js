@@ -6,14 +6,18 @@ import { render } from 'react-dom';
 import { App } from './components/App';
 //import hash router
 import { HashRouter as Router } from 'react-router-dom';
+//import context provider
+import { ContextProvider } from '../src/utils/Context';
 
 //crete root const
 const root = document.getElementById('root');
 
 //render the app
 render(
-	<Router basename='/'>
-		<App />
-	</Router>,
+	<ContextProvider>
+		<Router basename='/'>
+			<App />
+		</Router>
+	</ContextProvider>,
 	root,
 );

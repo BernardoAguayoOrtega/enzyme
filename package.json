@@ -50,6 +50,7 @@
 		"react-dom": "^16.14.0"
 	},
 	"jest": {
+		"verbose": true,
 		"setupFilesAfterEnv": [
 			"<rootDir>./setupTest.js"
 		],

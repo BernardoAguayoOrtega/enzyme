@@ -1,19 +1,22 @@
 //import react
-import React from 'react';
+import React, { useContext, useState } from 'react';
 //import switch, link and route components
-import { Switch, Link, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 //import random page
 import { RandomPage } from '../RandomPage';
+//import context
+// import { Context } from '../../utils/Context';
 
 const SubTitle = ({ text }) => <h4>{text}</h4>;
 
 //export and create app component
 export const App = () => {
-	const handleSomething = () => true;
+	// const { number } = useContext(Context);
+	const [number] = useState(5)
 
 	return (
 		<>
-			<h3 className='title'>I'm the app component</h3>
+			<h3 className='title'>I'm the app component {number}</h3>
 			<h2>Hey there</h2>
 			<h3>{name}</h3>
 			<SubTitle text='hey <3' />
