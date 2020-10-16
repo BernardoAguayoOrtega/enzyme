@@ -10,8 +10,10 @@ import toJson from 'enzyme-to-json';
 import { ContextProvider } from '../utils/Context';
 
 describe('<App />', () => {
-	const wrapper = shallow(
+	const wrapper = mount(
+		<ContextProvider>
 			<App />
+		</ContextProvider>,
 	);
 
 	it('should contain 1 h3 element', () => {
@@ -31,7 +33,7 @@ describe('<App />', () => {
 	});
 
 	it('should bee sub title component', () => {
-		expect(wrapper.find('SubTitle[text="hey <3"]').exists()).toBe(true);
+		expect(wrapper.find('SubTitle').exists()).toBe(true);
 	});
 
 	it('is there a switch?', () => {
@@ -41,7 +43,7 @@ describe('<App />', () => {
 	});
 
 	it('How many routes are?', () => {
-		const numOfRoutes = wrapper.find('Route').length;
+		const numOfRoutes = wrapper.find('Router').length;
 
 		expect(numOfRoutes).toBe(1);
 	});

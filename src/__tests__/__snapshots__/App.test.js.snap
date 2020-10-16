@@ -1,27 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<App /> matches the snap shot 1`] = `
-<Fragment>
-  <h3
-    className="title"
-  >
-    I'm the app component 
-    5
-  </h3>
-  <h2>
-    Hey there
-  </h2>
-  <h3 />
-  <SubTitle
-    text="hey <3"
-  />
-  <Switch>
-    <Route
-      exact={true}
-      path="/random"
+<ContextProvider>
+  <App>
+    <HashRouter
+      basename="/"
     >
-      <RandomPage />
-    </Route>
-  </Switch>
-</Fragment>
+      <Router
+        history={
+          Object {
+            "action": "POP",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 1,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+      >
+        <h3
+          className="title"
+        >
+          I'm the app component 
+          5
+        </h3>
+        <h2>
+          Hey there
+        </h2>
+        <h3 />
+        <SubTitle>
+          <h4 />
+        </SubTitle>
+        <Switch />
+      </Router>
+    </HashRouter>
+  </App>
+</ContextProvider>
 `;
