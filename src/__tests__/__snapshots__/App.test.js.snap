@@ -41,6 +41,31 @@ exports[`<App /> matches the snap shot 1`] = `
         <SubTitle>
           <h4 />
         </SubTitle>
+        <div
+          style={
+            Object {
+              "height": "20 rem !important",
+              "width": "50%",
+            }
+          }
+        >
+          <DiscussionEmbed
+            height={320}
+            shortname="example"
+            showMedia={true}
+            showParentComment={true}
+            width={420}
+          >
+            <div
+              height={320}
+              id="disqus_thread"
+              shortname="example"
+              showMedia={true}
+              showParentComment={true}
+              width={420}
+            />
+          </DiscussionEmbed>
+        </div>
         <Switch />
       </Router>
     </HashRouter>

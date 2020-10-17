@@ -14,8 +14,8 @@
 		"url": "git+https://github.com/BernardoAguayoOrtega/enzyme.git"
 	},
 	"keywords": [
-		"reac.js",
-		"enzyem"
+		"react.js",
+		"enzyme"
 	],
 	"author": "Bernardo Aguayo Ortega",
 	"license": "MIT",
@@ -46,6 +46,7 @@
 		"webpack-dev-server": "^3.11.0"
 	},
 	"dependencies": {
+		"disqus-react": "^1.0.10",
 		"react": "^16.14.0",
 		"react-dom": "^16.14.0"
 	},
